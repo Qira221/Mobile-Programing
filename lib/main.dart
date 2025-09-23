@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/latihan/Layout1.dart';
 import 'package:flutter_application_1/tugas/Tugas.dart';
 import 'package:flutter_application_1/tugas/Tugas1.dart';
+import 'package:flutter_application_1/tugas/Tugas2.dart';
 
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Tugas1());
+    return MaterialApp(home: Tugas2());
   }
 }
 
