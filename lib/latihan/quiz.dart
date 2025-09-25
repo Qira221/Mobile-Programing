@@ -17,9 +17,23 @@ class quiz extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Your Program"),
-                  Text("Details"),
+                  Text("Details",style: TextStyle(color: Colors.blue),),
                 ],
               ),
+              Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.deepPurpleAccent
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [Text("Next Workout",style: TextStyle(color: Colors.white,fontSize:12 ),),
+                  Text("Lets Toning",style: TextStyle(color: Colors.white,fontSize: 28,fontWeight: FontWeight.bold ),),
+                  Text("and Glutes Workout",style: TextStyle(color: Colors.white),)],
+                ),
+                
+              )
             ],
           ),
         ),
