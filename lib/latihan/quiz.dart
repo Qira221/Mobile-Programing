@@ -8,32 +8,67 @@ class quiz extends StatelessWidget {
     return Scaffold(
       body: SizedBox(
         child: Padding(
-          padding: const EdgeInsets.all(15),
+          padding: EdgeInsets.all(15),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Training"),
+              Text("Training", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Your Program"),
-                  Text("Details",style: TextStyle(color: Colors.blue),),
+                  Text("Your Program", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                  Text("Details >", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)),
                 ],
               ),
+              SizedBox(height: 15),
               Container(
                 width: double.infinity,
+                padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.deepPurpleAccent
+                  color: Colors.deepPurpleAccent,
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [Text("Next Workout",style: TextStyle(color: Colors.white,fontSize:12 ),),
-                  Text("Lets Toning",style: TextStyle(color: Colors.white,fontSize: 28,fontWeight: FontWeight.bold ),),
-                  Text("and Glutes Workout",style: TextStyle(color: Colors.white),)],
+                  children: [
+                    Text(
+                      "Next Workout",
+                      style: TextStyle(color: Colors.white, fontSize: 12),
+                    ),
+                    SizedBox(height: 4),
+                    Text(
+                      "Lets Toning\nand Glutes Workout",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(height: 80),
+                    Text(
+                      "60 min",
+                      style: TextStyle(color: Colors.white70),
+                    ),
+                  ],
                 ),
-                
-              )
+              ),
+              SizedBox(height: 30),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: Colors.white,
+                ),
+                child: Center(
+                  child: Column(
+                    children: [
+                      Text("You are doing great"),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
         ),
