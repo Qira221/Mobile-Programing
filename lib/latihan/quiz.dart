@@ -27,7 +27,9 @@ class quiz extends StatelessWidget {
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Colors.deepPurpleAccent,
+                  // color: Colors.deepPurpleAccent,
+                  gradient: LinearGradient(colors: [Colors.black,Colors.blueAccent])
+                  
                 ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,12 +65,21 @@ class quiz extends StatelessWidget {
                 ),
                 child: Center(
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("You are doing great"),
+                      Text("You are doing great",style: TextStyle(color: Colors.blue,fontSize:19 ),),
+                      Text("keep it up\nstick to your plan")
                     ],
                   ),
                 ),
               ),
+              SizedBox(height: 50,),
+              Text("Area of Focus",style: TextStyle(fontWeight: FontWeight.bold),),
+              Column(
+                children: [Container(
+
+                )],
+              )
             ],
           ),
         ),
