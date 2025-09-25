@@ -53,7 +53,7 @@ class Tugas2 extends StatelessWidget {
 
               
                 Positioned(
-                  right: 490,
+                  right: 500,
                   bottom: 0,
                   child: Image.asset(
                     "assets/karakter2.png",

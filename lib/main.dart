@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/latihan/Layout1.dart';
+import 'package:flutter_application_1/latihan/baris.dart';
+import 'package:flutter_application_1/latihan/kontainer.dart';
+import 'package:flutter_application_1/latihan/pages/page1.dart';
+import 'package:flutter_application_1/latihan/pages/page2.dart';
+import 'package:flutter_application_1/latihan/quiz.dart';
 import 'package:flutter_application_1/tugas/Tugas.dart';
 import 'package:flutter_application_1/tugas/Tugas1.dart';
 import 'package:flutter_application_1/tugas/Tugas2.dart';
@@ -15,7 +20,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: Tugas2());
+    return MaterialApp(
+      // routes: {
+      //   "/": (context)=>Page1(),
+      //   "/halaman2": (context)=>Page2()
+      // },
+      // initialRoute: "/",
+      home: quiz()
+      );
   }
 }
 
