@@ -28,7 +28,7 @@ class quiz extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
                   // color: Colors.deepPurpleAccent,
-                  gradient: LinearGradient(colors: [Colors.black,Colors.blueAccent])
+                  gradient: LinearGradient(colors: [const Color.fromARGB(255, 186, 103, 235),Colors.blueAccent])
                   
                 ),
                 child: Column(

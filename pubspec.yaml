@@ -65,7 +65,12 @@ flutter:
       - assets/karakter.png
       - assets/karakter1.png
       - assets/karakter2.png
-      - assets/masjid1.png
+      - assets/card.png
+      - assets/tangan.png
+      - assets/kaki.png
+      - assets/lari.png
+    
+
 
       
 
