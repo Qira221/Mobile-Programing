@@ -12,13 +12,18 @@ class quiz extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text("Training", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+              Text("Training",
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
               SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text("Your Program", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-                  Text("Details >", style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold)),
+                  Text("Your Program",
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+                  Text("Details >",
+                      style: TextStyle(
+                          color: Colors.blue, fontWeight: FontWeight.bold)),
                 ],
               ),
               SizedBox(height: 15),
@@ -26,11 +31,11 @@ class quiz extends StatelessWidget {
                 width: double.infinity,
                 padding: EdgeInsets.all(16),
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  // color: Colors.deepPurpleAccent,
-                  gradient: LinearGradient(colors: [const Color.fromARGB(255, 186, 103, 235),Colors.blueAccent])
-                  
-                ),
+                    borderRadius: BorderRadius.circular(10),
+                    gradient: LinearGradient(colors: [
+                      const Color.fromARGB(255, 186, 103, 235),
+                      Colors.blueAccent
+                    ])),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -67,18 +72,36 @@ class quiz extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text("You are doing great",style: TextStyle(color: Colors.blue,fontSize:19 ),),
+                      Text(
+                        "You are doing great",
+                        style: TextStyle(color: Colors.blue, fontSize: 19),
+                      ),
                       Text("keep it up\nstick to your plan")
                     ],
                   ),
                 ),
               ),
-              SizedBox(height: 50,),
-              Text("Area of Focus",style: TextStyle(fontWeight: FontWeight.bold),),
-              Column(
-                children: [Container(
-
-                )],
+              SizedBox(
+                height: 50,
+              ),
+              Text(
+                "Area of Focus",
+                style: TextStyle(fontWeight: FontWeight.bold),
+              ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Container(
+                      padding: EdgeInsets.all(12),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.white),
+                      child: Image.asset("assets/kak.png", height: 80),
+                    ),
+                  ),
+                  SizedBox(width: 15),
+               
+                ],
               )
             ],
           ),
