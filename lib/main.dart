@@ -5,6 +5,7 @@ import 'package:flutter_application_1/latihan/kontainer.dart';
 import 'package:flutter_application_1/latihan/pages/page1.dart';
 import 'package:flutter_application_1/latihan/pages/page2.dart';
 import 'package:flutter_application_1/latihan/quiz.dart';
+import 'package:flutter_application_1/latihan/text_box.dart';
 import 'package:flutter_application_1/tugas/Tugas.dart';
 import 'package:flutter_application_1/tugas/Tugas1.dart';
 import 'package:flutter_application_1/tugas/Tugas2.dart';
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
       //   "/halaman2": (context)=>Page2()
       // },
       // initialRoute: "/",
-      home: quiz()
+      home: TextBoxPage()
       );
   }
 }
